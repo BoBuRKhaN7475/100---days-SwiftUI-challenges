@@ -42,11 +42,11 @@ import Foundation
 //}
 //
 
-enum Weather {
-    case sun, rain, wind, snow, unknown
-}
-
-let forecast = Weather.rain
+//enum Weather {
+//    case sun, rain, wind, snow, unknown
+//}
+//
+//let forecast = Weather.rain
 
 //if forecast == .sun {
 //    print("It Should be a nice day")
@@ -56,47 +56,74 @@ let forecast = Weather.rain
 //    print("Wear something warm")
 //}
 
-switch forecast {
-case .sun:
-    print("It should be a nice day.")
-case .rain:
-    print("Pack an umbrella")
-case .wind:
-    print("Wear something warm")
-case .snow:
-    print("School is cancelled.")
-case .unknown:
-    print("Our forecast generator is broken!")
+//switch forecast {
+//case .sun:
+//    print("It should be a nice day.")
+//case .rain:
+//    print("Pack an umbrella")
+//case .wind:
+//    print("Wear something warm")
+//case .snow:
+//    print("School is cancelled.")
+//case .unknown:
+//    print("Our forecast generator is broken!")
+//}
+//
+//
+//let place = "Metropolis"
+//
+//switch place {
+//case "Gotman":
+//    print("You're Batman!")
+//case "Mega-Batman":
+//    print("Betmen Mega!")
+//default:
+//    print("A Batman")
+//}
+//
+//let day = 5
+//print("My true love gave to me ...")
+//
+//switch day {
+//case 5:
+//    print("5 golden rings")
+//    fallthrough
+//case 4:
+//    print("4 calling birds")
+//    fallthrough
+//case 3:
+//    print("3 French hens")
+//    fallthrough
+//case 2:
+//    print("2 turtle doves")
+//    fallthrough
+//default:
+//    print("Bu raqamga sovg'a yo'q")
+//}
+
+
+let age = 18
+let canVote = age <= 20 ? "True" : "False"
+print(canVote)
+
+
+let hour = 23
+
+if hour < 12 {
+    print("It's before noon")
+} else {
+    print("It's after noon")
 }
 
+let name = ["Jayne", "Kaylee","Mal"]
+let crewCount = name.isEmpty ? "No one" : "\(name.count) people"
+print(crewCount)
 
-let place = "Metropolis"
 
-switch place {
-case "Gotman":
-    print("You're Batman!")
-case "Mega-Batman":
-    print("Betmen Mega!")
-default:
-    print("A Batman")
+enum Theme {
+    case light,dark
 }
+let theme = Theme.dark
 
-let day = 5
-print("My true love gave to me ...")
-
-switch day {
-case 5:
-    print("5 golden rings")
-    fallthrough
-case 4:
-    print("4 calling birds")
-    fallthrough
-case 3:
-    print("3 French hens")
-    fallthrough
-case 2:
-    print("2 turtle doves")
-    fallthrough
-default:
-    print("Bu raqamga sovg'a yo'q")
-}
+let background = theme == .dark ? "Black" : "White"
+print(background)
