@@ -101,29 +101,89 @@ import Foundation
 //    print("Bu raqamga sovg'a yo'q")
 //}
 
+//
+//let age = 18
+//let canVote = age <= 20 ? "True" : "False"
+//print(canVote)
+//
+//
+//let hour = 23
+//
+//if hour < 12 {
+//    print("It's before noon")
+//} else {
+//    print("It's after noon")
+//}
+//
+//let name = ["Jayne", "Kaylee","Mal"]
+//let crewCount = name.isEmpty ? "No one" : "\(name.count) people"
+//print(crewCount)
+//
+//
+//enum Theme {
+//    case light,dark
+//}
+//let theme = Theme.dark
+//
+//let background = theme == .dark ? "Black" : "White"
+//print(background)
 
-let age = 18
-let canVote = age <= 20 ? "True" : "False"
-print(canVote)
 
+let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
 
-let hour = 23
-
-if hour < 12 {
-    print("It's before noon")
-} else {
-    print("It's after noon")
+for os in platforms {
+    print("Swift works great on \(os).")
+}
+for i in 1...10 {
+    print("The \(i) times table")
+    
+    for j in 1...10 {
+        print("   \(j) x \(i) is \(j * i)")
+    }
+    
+    print()
 }
 
-let name = ["Jayne", "Kaylee","Mal"]
-let crewCount = name.isEmpty ? "No one" : "\(name.count) people"
-print(crewCount)
-
-
-enum Theme {
-    case light,dark
+for i in 1...5 {
+    print("Counting from 1 through 5: \(i)")
 }
-let theme = Theme.dark
 
-let background = theme == .dark ? "Black" : "White"
-print(background)
+for i in 1..<5 {
+    print("Counting from 1 up to 5: \(i)")
+}
+
+
+var lyric = "Haters gonna"
+for _ in 1...5 {
+    lyric += " hate"
+}
+print(lyric)
+
+
+
+var countdown = 10
+
+while countdown > 0 {
+    print("\(countdown)...")
+    countdown -= 1
+}
+
+print("Blast off!")
+
+let id = Int.random(in: 1...1000)
+
+let amount = Double.random(in: 0...1)
+
+var roll = 0
+
+while roll != 10 {
+    roll = Int.random(in: 1...10)
+    print("I rolled a \(roll)")
+}
+
+print("Critical hit")
+
+
+var set: Set = [1, 2, 3, 4, 1, 2, 3, 4]
+var sum = set.reduce(0, +)
+print (sum)

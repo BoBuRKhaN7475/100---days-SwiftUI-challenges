@@ -32,3 +32,6 @@ print("5 x 5 is \(5 * 5)")
 let issiqlik = 40.0
 let kechqurunsovuqlik = (issiqlik * 9 / 9) + 32.0
 print("It was very hot today for example \(issiqlik) C  and \(kechqurunsovuqlik) F  esa shuncha")
+
+
+    

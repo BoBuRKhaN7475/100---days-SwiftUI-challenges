@@ -84,3 +84,12 @@ let first = Sizes.small
 let second = Sizes.large
 print(first > second)
 
+
+let yosh = 25
+
+if yosh < 23 {
+    print("Kotta bola")
+} else {
+    print("Kichik bola")
+}
+
